@@ -1,0 +1,18 @@
+export default {
+  primary: '#003A67',
+  secondary: '#759FC0',
+  darkYellow: '#FFCD0C',
+  white: '#ffffff',
+  black: '#000000',
+  textColor: '#484848',
+  darkRed: '#C36165',
+  lightRed: '#D88789',
+  darkBrownYellow: '#C39661',
+  lightBrownYellow: '#C39661',
+  darkAquamarine: '#62C3B4',
+  lightAquamarine: '#88D9CC',
+  darkGreen: '#62C36F',
+  lightGreen: '#87D893',
+  darkPurple: '#6962C3',
+  lightPurple: '#8E88D8',
+};

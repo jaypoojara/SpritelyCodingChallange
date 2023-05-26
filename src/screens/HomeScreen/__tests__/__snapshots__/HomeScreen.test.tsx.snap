@@ -1,271 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<HomeScreen /> renders correctly 1`] = `
-<BVLinearGradient
-  colors={
-    Array [
-      4278205031,
-      4285898688,
-    ]
-  }
-  endPoint={
-    Object {
-      "x": 0.9,
-      "y": 0.4,
-    }
-  }
-  locations={null}
-  startPoint={
-    Object {
-      "x": 0.2,
-      "y": 0.1,
-    }
-  }
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <View
-    style={
-      Object {
-        "marginHorizontal": 30,
-      }
-    }
-  >
-    <RCTSafeAreaView
-      style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-        }
-      }
-      testID="home-header-id"
-    >
-      <Image
-        source={
-          Object {
-            "testUri": "../../../src/asset/icons/spritely_logo.png",
-          }
-        }
-        style={
-          Object {
-            "resizeMode": "contain",
-            "width": 110,
-          }
-        }
-      />
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={false}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffffff",
-            "borderRadius": 25,
-            "elevation": 5,
-            "height": 50,
-            "justifyContent": "center",
-            "opacity": 1,
-            "shadowColor": "#000000",
-            "shadowOffset": Object {
-              "height": 0,
-              "width": 0,
-            },
-            "shadowOpacity": 0.3,
-            "shadowRadius": 10,
-            "width": 50,
-          }
-        }
-        testID="notification-button-id"
-      >
-        <View>
-          <Text
-            allowFontScaling={false}
-            selectable={false}
-            style={
-              Array [
-                Object {
-                  "color": "#003A67",
-                  "fontSize": 30,
-                },
-                undefined,
-                Object {
-                  "fontFamily": "Material Design Icons",
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                },
-                Object {},
-              ]
-            }
-          >
-            󰂚
-          </Text>
-        </View>
-      </View>
-    </RCTSafeAreaView>
-    <Text
-      style={
-        Object {
-          "color": "#ffffff",
-          "fontSize": 23,
-          "fontWeight": "bold",
-          "letterSpacing": 0.7,
-          "marginVertical": 10,
-        }
-      }
-    >
-      Good Afternoon
-      , 
-    </Text>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "marginBottom": 25,
-        }
-      }
-    >
-      <Text
-        allowFontScaling={false}
-        selectable={false}
-        style={
-          Array [
-            Object {
-              "color": "#FFCD0C",
-              "fontSize": 30,
-            },
-            undefined,
-            Object {
-              "fontFamily": "Ionicons",
-              "fontStyle": "normal",
-              "fontWeight": "normal",
-            },
-            Object {},
-          ]
-        }
-      >
-        
-      </Text>
-      <Text
-        style={
-          Object {
-            "color": "#ffffff",
-            "fontSize": 17,
-            "fontWeight": "500",
-            "letterSpacing": 0.7,
-            "marginLeft": 10,
-          }
-        }
-      >
-        -
-        °C/
-        -
-        °C
-      </Text>
-    </View>
-  </View>
-  <View
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "borderTopLeftRadius": 35,
-        "borderTopRightRadius": 35,
-        "elevation": 5,
-        "flex": 1,
-        "shadowColor": "#000000",
-        "shadowOffset": Object {
-          "height": 0,
-          "width": 0,
-        },
-        "shadowOpacity": 0.3,
-        "shadowRadius": 10,
-      }
-    }
-  >
-    <RCTScrollView
-      ListEmptyComponent={<ListEmptyComponent />}
-      contentContainerStyle={
-        Object {
-          "borderTopLeftRadius": 35,
-          "borderTopRightRadius": 35,
-          "flexGrow": 1,
-          "paddingHorizontal": 30,
-          "paddingTop": 30,
-        }
-      }
-      getItem={[Function]}
-      getItemCount={[Function]}
-      keyExtractor={[Function]}
-      onContentSizeChange={[Function]}
-      onLayout={[Function]}
-      onMomentumScrollBegin={[Function]}
-      onMomentumScrollEnd={[Function]}
-      onScroll={[Function]}
-      onScrollBeginDrag={[Function]}
-      onScrollEndDrag={[Function]}
-      removeClippedSubviews={false}
-      renderItem={[Function]}
-      scrollEventThrottle={50}
-      stickyHeaderIndices={Array []}
-      viewabilityConfigCallbackPairs={Array []}
-    >
-      <View>
-        <View
-          style={
-            Object {
-              "alignItems": "center",
-              "flex": 1,
-              "justifyContent": "center",
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "color": "#484848",
-                "fontSize": 18,
-                "fontWeight": "500",
-                "letterSpacing": 0.8,
-              }
-            }
-          >
-            Data not found!
-          </Text>
-        </View>
-      </View>
-    </RCTScrollView>
-  </View>
-</BVLinearGradient>
-`;
-
 exports[`<HomeScreen /> renders home screen correctly 1`] = `
-<BVLinearGradient
+<LinearGradient
   colors={
     [
-      4278205031,
-      4285898688,
+      "#003A67",
+      "#759FC0",
     ]
   }
-  endPoint={
+  end={
     {
       "x": 0.9,
       "y": 0.4,
     }
   }
-  locations={null}
-  startPoint={
+  start={
     {
       "x": 0.2,
       "y": 0.1,
@@ -386,7 +135,7 @@ exports[`<HomeScreen /> renders home screen correctly 1`] = `
         }
       }
     >
-      Good Afternoon
+      Good Morning
       , 
       Gloria
     </Text>
@@ -551,214 +300,26 @@ exports[`<HomeScreen /> renders home screen correctly 1`] = `
         "shadowRadius": 10,
       }
     }
-  />
-</BVLinearGradient>
-`;
-
-exports[`renders correctly 1`] = `
-<BVLinearGradient
-  colors={
-    Array [
-      4278205031,
-      4285898688,
-    ]
-  }
-  endPoint={
-    Object {
-      "x": 0.9,
-      "y": 0.4,
-    }
-  }
-  locations={null}
-  startPoint={
-    Object {
-      "x": 0.2,
-      "y": 0.1,
-    }
-  }
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <View
-    style={
-      Object {
-        "marginHorizontal": 30,
-      }
-    }
-  >
-    <RCTSafeAreaView
-      style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-        }
-      }
-      testID="home-header-id"
-    >
-      <Image
-        source={
-          Object {
-            "testUri": "../../../src/asset/icons/spritely_logo.png",
-          }
-        }
-        style={
-          Object {
-            "resizeMode": "contain",
-            "width": 110,
-          }
-        }
-      />
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={false}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#ffffff",
-            "borderRadius": 25,
-            "elevation": 5,
-            "height": 50,
-            "justifyContent": "center",
-            "opacity": 1,
-            "shadowColor": "#000000",
-            "shadowOffset": Object {
-              "height": 0,
-              "width": 0,
-            },
-            "shadowOpacity": 0.3,
-            "shadowRadius": 10,
-            "width": 50,
-          }
-        }
-        testID="notification-button-id"
-      >
-        <View>
-          <Text
-            allowFontScaling={false}
-            selectable={false}
-            style={
-              Array [
-                Object {
-                  "color": "#003A67",
-                  "fontSize": 30,
-                },
-                undefined,
-                Object {
-                  "fontFamily": "Material Design Icons",
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                },
-                Object {},
-              ]
-            }
-          >
-            󰂚
-          </Text>
-        </View>
-      </View>
-    </RCTSafeAreaView>
-    <Text
-      style={
-        Object {
-          "color": "#ffffff",
-          "fontSize": 23,
-          "fontWeight": "bold",
-          "letterSpacing": 0.7,
-          "marginVertical": 10,
-        }
-      }
-    >
-      Good Afternoon
-      , 
-    </Text>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "marginBottom": 25,
-        }
-      }
-    >
-      <Text
-        allowFontScaling={false}
-        selectable={false}
-        style={
-          Array [
-            Object {
-              "color": "#FFCD0C",
-              "fontSize": 30,
-            },
-            undefined,
-            Object {
-              "fontFamily": "Ionicons",
-              "fontStyle": "normal",
-              "fontWeight": "normal",
-            },
-            Object {},
-          ]
-        }
-      >
-        
-      </Text>
-      <Text
-        style={
-          Object {
-            "color": "#ffffff",
-            "fontSize": 17,
-            "fontWeight": "500",
-            "letterSpacing": 0.7,
-            "marginLeft": 10,
-          }
-        }
-      >
-        -
-        °C/
-        -
-        °C
-      </Text>
-    </View>
-  </View>
-  <View
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "borderTopLeftRadius": 35,
-        "borderTopRightRadius": 35,
-        "elevation": 5,
-        "flex": 1,
-        "shadowColor": "#000000",
-        "shadowOffset": Object {
-          "height": 0,
-          "width": 0,
-        },
-        "shadowOpacity": 0.3,
-        "shadowRadius": 10,
-      }
-    }
   >
     <RCTScrollView
       ListEmptyComponent={<ListEmptyComponent />}
       contentContainerStyle={
-        Object {
+        {
           "borderTopLeftRadius": 35,
           "borderTopRightRadius": 35,
           "flexGrow": 1,
           "paddingHorizontal": 30,
           "paddingTop": 30,
         }
+      }
+      data={
+        [
+          "noticeboard",
+          "activities",
+          "calendar",
+          "maintenance",
+          "settings",
+        ]
       }
       getItem={[Function]}
       getItemCount={[Function]}
@@ -773,34 +334,467 @@ exports[`renders correctly 1`] = `
       removeClippedSubviews={false}
       renderItem={[Function]}
       scrollEventThrottle={50}
-      stickyHeaderIndices={Array []}
-      viewabilityConfigCallbackPairs={Array []}
+      stickyHeaderIndices={[]}
+      viewabilityConfigCallbackPairs={[]}
     >
       <View>
         <View
-          style={
-            Object {
-              "alignItems": "center",
-              "flex": 1,
-              "justifyContent": "center",
-            }
-          }
+          onLayout={[Function]}
+          style={null}
         >
-          <Text
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
             style={
-              Object {
-                "color": "#484848",
-                "fontSize": 18,
-                "fontWeight": "500",
-                "letterSpacing": 0.8,
+              {
+                "alignItems": "center",
+                "backgroundColor": "#ffffff",
+                "borderRadius": 8,
+                "elevation": 5,
+                "flexDirection": "row",
+                "marginBottom": 20,
+                "opacity": 1,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.3,
+                "shadowRadius": 6,
               }
             }
+            testID="features-item-id"
           >
-            Data not found!
-          </Text>
+            <LinearGradient
+              colors={
+                [
+                  "#6962C3",
+                  "#8E88D8",
+                ]
+              }
+              style={
+                {
+                  "alignItems": "center",
+                  "borderBottomLeftRadius": 8,
+                  "borderTopLeftRadius": 8,
+                  "height": 60,
+                  "justifyContent": "center",
+                  "width": 45,
+                }
+              }
+              testID="noticeboard"
+            >
+              <Text
+                allowFontScaling={false}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": "#ffffff",
+                      "fontSize": 30,
+                    },
+                    undefined,
+                    {
+                      "fontFamily": "Ionicons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </LinearGradient>
+            <Text
+              style={
+                {
+                  "color": "#484848",
+                  "fontSize": 20,
+                  "fontWeight": "bold",
+                  "letterSpacing": 0.8,
+                  "paddingHorizontal": 20,
+                }
+              }
+            >
+              Noticeboard
+            </Text>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#ffffff",
+                "borderRadius": 8,
+                "elevation": 5,
+                "flexDirection": "row",
+                "marginBottom": 20,
+                "opacity": 1,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.3,
+                "shadowRadius": 6,
+              }
+            }
+            testID="features-item-id"
+          >
+            <LinearGradient
+              colors={
+                [
+                  "#62C36F",
+                  "#87D893",
+                ]
+              }
+              style={
+                {
+                  "alignItems": "center",
+                  "borderBottomLeftRadius": 8,
+                  "borderTopLeftRadius": 8,
+                  "height": 60,
+                  "justifyContent": "center",
+                  "width": 45,
+                }
+              }
+              testID="activities"
+            >
+              <Text
+                allowFontScaling={false}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": "#ffffff",
+                      "fontSize": 30,
+                    },
+                    undefined,
+                    {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </LinearGradient>
+            <Text
+              style={
+                {
+                  "color": "#484848",
+                  "fontSize": 20,
+                  "fontWeight": "bold",
+                  "letterSpacing": 0.8,
+                  "paddingHorizontal": 20,
+                }
+              }
+            >
+              Activities
+            </Text>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#ffffff",
+                "borderRadius": 8,
+                "elevation": 5,
+                "flexDirection": "row",
+                "marginBottom": 20,
+                "opacity": 1,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.3,
+                "shadowRadius": 6,
+              }
+            }
+            testID="features-item-id"
+          >
+            <LinearGradient
+              colors={
+                [
+                  "#62C3B4",
+                  "#88D9CC",
+                ]
+              }
+              style={
+                {
+                  "alignItems": "center",
+                  "borderBottomLeftRadius": 8,
+                  "borderTopLeftRadius": 8,
+                  "height": 60,
+                  "justifyContent": "center",
+                  "width": 45,
+                }
+              }
+              testID="calendar"
+            >
+              <Text
+                allowFontScaling={false}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": "#ffffff",
+                      "fontSize": 30,
+                    },
+                    undefined,
+                    {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </LinearGradient>
+            <Text
+              style={
+                {
+                  "color": "#484848",
+                  "fontSize": 20,
+                  "fontWeight": "bold",
+                  "letterSpacing": 0.8,
+                  "paddingHorizontal": 20,
+                }
+              }
+            >
+              Calendar
+            </Text>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#ffffff",
+                "borderRadius": 8,
+                "elevation": 5,
+                "flexDirection": "row",
+                "marginBottom": 20,
+                "opacity": 1,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.3,
+                "shadowRadius": 6,
+              }
+            }
+            testID="features-item-id"
+          >
+            <LinearGradient
+              colors={
+                [
+                  "#C39661",
+                  "#C39661",
+                ]
+              }
+              style={
+                {
+                  "alignItems": "center",
+                  "borderBottomLeftRadius": 8,
+                  "borderTopLeftRadius": 8,
+                  "height": 60,
+                  "justifyContent": "center",
+                  "width": 45,
+                }
+              }
+              testID="maintenance"
+            >
+              <Text
+                allowFontScaling={false}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": "#ffffff",
+                      "fontSize": 30,
+                    },
+                    undefined,
+                    {
+                      "fontFamily": "Ionicons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </LinearGradient>
+            <Text
+              style={
+                {
+                  "color": "#484848",
+                  "fontSize": 20,
+                  "fontWeight": "bold",
+                  "letterSpacing": 0.8,
+                  "paddingHorizontal": 20,
+                }
+              }
+            >
+              Maintenance
+            </Text>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#ffffff",
+                "borderRadius": 8,
+                "elevation": 5,
+                "flexDirection": "row",
+                "marginBottom": 20,
+                "opacity": 1,
+                "shadowColor": "#000000",
+                "shadowOffset": {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.3,
+                "shadowRadius": 6,
+              }
+            }
+            testID="features-item-id"
+          >
+            <LinearGradient
+              colors={
+                [
+                  "#C36165",
+                  "#D88789",
+                ]
+              }
+              style={
+                {
+                  "alignItems": "center",
+                  "borderBottomLeftRadius": 8,
+                  "borderTopLeftRadius": 8,
+                  "height": 60,
+                  "justifyContent": "center",
+                  "width": 45,
+                }
+              }
+              testID="settings"
+            >
+              <Text
+                allowFontScaling={false}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": "#ffffff",
+                      "fontSize": 30,
+                    },
+                    undefined,
+                    {
+                      "fontFamily": "Ionicons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </LinearGradient>
+            <Text
+              style={
+                {
+                  "color": "#484848",
+                  "fontSize": 20,
+                  "fontWeight": "bold",
+                  "letterSpacing": 0.8,
+                  "paddingHorizontal": 20,
+                }
+              }
+            >
+              Settings
+            </Text>
+          </View>
         </View>
       </View>
     </RCTScrollView>
   </View>
-</BVLinearGradient>
+</LinearGradient>
 `;

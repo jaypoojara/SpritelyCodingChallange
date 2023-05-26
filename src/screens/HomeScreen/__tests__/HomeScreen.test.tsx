@@ -1,23 +1,29 @@
 import 'react-native';
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { render, fireEvent, screen } from '@testing-library/react-native';
-import { Provider } from 'react-redux';
+import {render, fireEvent, screen} from '@testing-library/react-native';
+import {Provider} from 'react-redux';
 import configureStore from 'redux-mock-store';
 import HomeScreen from '..';
 
 const mockStore = configureStore([]);
 
-test('renders correctly', () => {
-    const initialState = { homeReducer: { error: null, loading: null, data: null, } };
+describe('<HomeScreen />', () => {
+  it('renders correctly', () => {
+    const initialState = {
+      homeReducer: {error: null, loading: null, data: null},
+    };
     const store = mockStore(initialState);
 
-    const element = renderer.create(
+    const element = renderer
+      .create(
         <Provider store={store}>
-            <HomeScreen />
-        </Provider>
-    ).toJSON();
+          <HomeScreen />
+        </Provider>,
+      )
+      .toJSON();
     expect(element).toMatchSnapshot();
+  });
 });
 
 // test('loading view', () => {

@@ -1,16 +1,10 @@
-import React, { useEffect } from 'react';
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  FlatList,
-  ActivityIndicator,
-} from 'react-native';
-import { useDispatch, useSelector } from 'react-redux';
+import React, {useEffect} from 'react';
+import {View, Text, TouchableOpacity, FlatList} from 'react-native';
+import {useDispatch, useSelector} from 'react-redux';
 import LinearGradient from 'react-native-linear-gradient';
-import { homeScreenApiAsync } from '../../redux/HomeScreen/action';
-import { AppDispatch, RootState } from '../../redux/store';
-import { HomeInitialState } from '../../types/redux/homeSlice';
+import {homeScreenApiAsync} from '../../redux/HomeScreen/action';
+import {AppDispatch, RootState} from '../../redux/store';
+import {HomeInitialState} from '../../types/redux/homeSlice';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Header from '../../components/Header';
@@ -31,7 +25,7 @@ export default function HomeScreen() {
     dispatch(homeScreenApiAsync());
   }, [dispatch]);
 
-  useEffect(() => { }, [homeReducer]);
+  useEffect(() => {}, [homeReducer]);
 
   const getUserCurrentTime = () => {
     const currentHour = new Date().getHours();
@@ -47,7 +41,7 @@ export default function HomeScreen() {
   const renderContent = () => {
     if (homeReducer.loading) {
       return (
-        <View testID='loading-id' style={Styles.loadingMainView}>
+        <View testID="loading-id" style={Styles.loadingMainView}>
           <LoadingIndicator />
         </View>
       );
@@ -103,7 +97,7 @@ export default function HomeScreen() {
             contentContainerStyle={Styles.flatListStyle}
             data={homeReducer.data?.features}
             keyExtractor={item => item}
-            renderItem={({ item }) => <Index name={item} />}
+            renderItem={({item}) => <Index name={item} />}
             ListEmptyComponent={<ListEmptyComponent />}
           />
         </View>
@@ -114,8 +108,8 @@ export default function HomeScreen() {
   return (
     <LinearGradient
       colors={[colors.primary, colors.secondary]}
-      start={{ x: 0.2, y: 0.1 }}
-      end={{ x: 0.9, y: 0.4 }}
+      start={{x: 0.2, y: 0.1}}
+      end={{x: 0.9, y: 0.4}}
       style={Styles.linearGradientStyle}>
       {renderContent()}
     </LinearGradient>

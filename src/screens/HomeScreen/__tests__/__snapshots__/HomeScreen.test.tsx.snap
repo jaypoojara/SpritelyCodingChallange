@@ -250,6 +250,311 @@ exports[`<HomeScreen /> renders correctly 1`] = `
 </BVLinearGradient>
 `;
 
+exports[`<HomeScreen /> renders home screen correctly 1`] = `
+<BVLinearGradient
+  colors={
+    [
+      4278205031,
+      4285898688,
+    ]
+  }
+  endPoint={
+    {
+      "x": 0.9,
+      "y": 0.4,
+    }
+  }
+  locations={null}
+  startPoint={
+    {
+      "x": 0.2,
+      "y": 0.1,
+    }
+  }
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "marginHorizontal": 30,
+      }
+    }
+  >
+    <RCTSafeAreaView
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+      testID="home-header-id"
+    >
+      <Image
+        source={
+          {
+            "testUri": "../../../src/asset/icons/spritely_logo.png",
+          }
+        }
+        style={
+          {
+            "resizeMode": "contain",
+            "width": 110,
+          }
+        }
+      />
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#ffffff",
+            "borderRadius": 25,
+            "elevation": 5,
+            "height": 50,
+            "justifyContent": "center",
+            "opacity": 1,
+            "shadowColor": "#000000",
+            "shadowOffset": {
+              "height": 0,
+              "width": 0,
+            },
+            "shadowOpacity": 0.3,
+            "shadowRadius": 10,
+            "width": 50,
+          }
+        }
+        testID="notification-button-id"
+      >
+        <View>
+          <MaterialCommunityIcons
+            color="#003A67"
+            name="bell"
+            size={30}
+          />
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#C36165",
+                "borderRadius": 10,
+                "height": 17,
+                "justifyContent": "center",
+                "position": "absolute",
+                "right": 0,
+                "width": 17,
+              }
+            }
+            testID="notification-count-id"
+          >
+            <Text
+              style={
+                {
+                  "color": "#ffffff",
+                  "fontSize": 11,
+                  "fontWeight": "bold",
+                }
+              }
+            >
+              3
+            </Text>
+          </View>
+        </View>
+      </View>
+    </RCTSafeAreaView>
+    <Text
+      style={
+        {
+          "color": "#ffffff",
+          "fontSize": 23,
+          "fontWeight": "bold",
+          "letterSpacing": 0.7,
+          "marginVertical": 10,
+        }
+      }
+    >
+      Good Afternoon
+      , 
+      Gloria
+    </Text>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "marginBottom": 25,
+        }
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          [
+            {
+              "color": "#FFCD0C",
+              "fontSize": 30,
+            },
+            undefined,
+            {
+              "fontFamily": "Ionicons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            {},
+          ]
+        }
+      >
+        
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#ffffff",
+            "fontSize": 17,
+            "fontWeight": "500",
+            "letterSpacing": 0.7,
+            "marginLeft": 10,
+          }
+        }
+      >
+        18
+        °C/
+        3
+        °C
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#ffffff",
+          "borderRadius": 8,
+          "flexDirection": "row",
+          "marginBottom": 20,
+          "opacity": 1,
+          "paddingLeft": 15,
+          "paddingVertical": 12,
+        }
+      }
+    >
+      <View>
+        <MaterialCommunityIcons
+          color="#003A67"
+          name="bell"
+          size={30}
+        />
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "backgroundColor": "#C36165",
+              "borderRadius": 10,
+              "height": 17,
+              "justifyContent": "center",
+              "position": "absolute",
+              "right": 0,
+              "width": 17,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#ffffff",
+                "fontSize": 11,
+                "fontWeight": "bold",
+              }
+            }
+          >
+            3
+          </Text>
+        </View>
+      </View>
+      <Text
+        style={
+          {
+            "flex": 1,
+            "fontSize": 16,
+            "fontWeight": "500",
+            "letterSpacing": 0.4,
+            "paddingHorizontal": 10,
+          }
+        }
+      >
+        3
+         unread notifications
+      </Text>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+            "paddingHorizontal": 12,
+          }
+        }
+      >
+        <MaterialCommunityIcons
+          color="#003A67"
+          name="window-close"
+          size={25}
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "backgroundColor": "#ffffff",
+        "borderTopLeftRadius": 35,
+        "borderTopRightRadius": 35,
+        "elevation": 5,
+        "flex": 1,
+        "shadowColor": "#000000",
+        "shadowOffset": {
+          "height": 0,
+          "width": 0,
+        },
+        "shadowOpacity": 0.3,
+        "shadowRadius": 10,
+      }
+    }
+  />
+</BVLinearGradient>
+`;
+
 exports[`renders correctly 1`] = `
 <BVLinearGradient
   colors={

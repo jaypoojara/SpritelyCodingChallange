@@ -8,7 +8,7 @@ import {HomeInitialState} from '../../types/redux/homeSlice';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Header from '../../components/Header';
-import Index from '../../components/FeaturesItem';
+import FeaturesItem from '../../components/FeaturesItem';
 import Styles from './styles';
 import colors from '../../utils/colors';
 import ListEmptyComponent from '../../components/EmptyView';
@@ -97,7 +97,7 @@ export default function HomeScreen() {
             contentContainerStyle={Styles.flatListStyle}
             data={homeReducer.data?.features}
             keyExtractor={item => item}
-            renderItem={({item}) => <Index name={item} />}
+            renderItem={({item}) => <FeaturesItem name={item} />}
             ListEmptyComponent={<ListEmptyComponent />}
           />
         </View>

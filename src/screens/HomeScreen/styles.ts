@@ -91,6 +91,11 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     letterSpacing: 0.8,
   },
+  loadingMainView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 });
 
 export default styles;

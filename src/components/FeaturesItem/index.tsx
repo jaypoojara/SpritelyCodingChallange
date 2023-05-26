@@ -1,9 +1,9 @@
-import {Text, TouchableOpacity} from 'react-native';
+import { Text, TouchableOpacity } from 'react-native';
 import React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import {TYPE} from '../../utils/enum';
+import { TYPE } from '../../utils/enum';
 import colors from '../../utils/colors';
 import styles from './styles';
 
@@ -12,12 +12,13 @@ interface IProps {
   onPress?(name: string): void;
 }
 
-export default function FeaturesItem({name, onPress}: IProps) {
+export default function FeaturesItem({ name, onPress }: IProps) {
   const getItemIcon = (type: string) => {
     switch (type) {
       case TYPE.NOTICEBOARD:
         return (
           <LinearGradient
+            testID={name}
             colors={[colors.darkPurple, colors.lightPurple]}
             style={styles.itemGradientView}>
             <Ionicons
@@ -31,6 +32,7 @@ export default function FeaturesItem({name, onPress}: IProps) {
       case TYPE.ACTIVITIES:
         return (
           <LinearGradient
+            testID={name}
             colors={[colors.darkGreen, colors.lightGreen]}
             style={styles.itemGradientView}>
             <MaterialIcons name="directions-walk" size={30} color={colors.white} />
@@ -39,6 +41,7 @@ export default function FeaturesItem({name, onPress}: IProps) {
       case TYPE.CALENDAR:
         return (
           <LinearGradient
+            testID={name}
             colors={[colors.darkAquamarine, colors.lightAquamarine]}
             style={styles.itemGradientView}>
             <MaterialIcons
@@ -51,6 +54,7 @@ export default function FeaturesItem({name, onPress}: IProps) {
       case TYPE.MAINTENANCE:
         return (
           <LinearGradient
+            testID={name}
             colors={[colors.darkBrownYellow, colors.lightBrownYellow]}
             style={styles.itemGradientView}>
             <Ionicons name="md-hammer-sharp" size={30} color={colors.white} />
@@ -59,6 +63,7 @@ export default function FeaturesItem({name, onPress}: IProps) {
       case TYPE.SETTINGS:
         return (
           <LinearGradient
+            testID={name}
             colors={[colors.darkRed, colors.lightRed]}
             style={styles.itemGradientView}>
             <Ionicons
@@ -80,6 +85,7 @@ export default function FeaturesItem({name, onPress}: IProps) {
 
   return (
     <TouchableOpacity
+      testID='features-item-id'
       onPress={() => onPress && onPress(name)}
       style={styles.itemView}>
       {getItemIcon(name)}

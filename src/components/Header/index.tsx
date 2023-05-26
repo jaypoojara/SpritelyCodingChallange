@@ -1,6 +1,5 @@
-import {View, Text, Image, SafeAreaView, StatusBar} from 'react-native';
+import { View, Text, Image, SafeAreaView, StatusBar, TouchableOpacity } from 'react-native';
 import React from 'react';
-import {TouchableOpacity} from 'react-native-gesture-handler';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import ICONS from '../../asset/icons';
 import colors from '../../utils/colors';
@@ -16,10 +15,11 @@ export default function Header({
   onPressNotification,
 }: IProps) {
   return (
-    <SafeAreaView style={styles.headerViewStyle}>
+    <SafeAreaView testID='home-header-id' style={styles.headerViewStyle}>
       <StatusBar hidden />
       <Image source={ICONS.SpiritelyLogo} style={styles.headerImageStyle} />
       <TouchableOpacity
+        testID='notification-button-id'
         onPress={onPressNotification}
         style={styles.notificationButtonStyle}>
         <View>
@@ -29,7 +29,7 @@ export default function Header({
             color={colors.primary}
           />
           {notificationCount ? (
-            <View style={styles.notificationCountView}>
+            <View testID='notification-count-id' style={styles.notificationCountView}>
               <Text style={styles.notificationCountText}>
                 {String(notificationCount)}
               </Text>

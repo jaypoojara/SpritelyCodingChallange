@@ -47,7 +47,7 @@ export default function HomeScreen() {
   const renderContent = () => {
     if (homeReducer.loading) {
       return (
-        <View style={Styles.loadingMainView}>
+        <View testID='loading-id' style={Styles.loadingMainView}>
           <LoadingIndicator />
         </View>
       );
